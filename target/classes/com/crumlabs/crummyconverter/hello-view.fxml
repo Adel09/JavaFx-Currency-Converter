@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.crumlabs.crummyconverter.HelloController">
+   <children>
+      <Label layoutX="196.0" layoutY="25.0" text="Crummy Converter">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="111.0" text="Enter amount in Naira:" />
+      <TextField fx:id="nairaInput" layoutX="236.0" layoutY="107.0" />
+      <Label layoutX="174.0" layoutY="161.0" text="\$:" />
+      <TextField fx:id="dollarInput" layoutX="236.0" layoutY="157.0" />
+      <Label layoutX="140.0" layoutY="200.0" text="Pounds:" />
+      <TextField id="poundInput" layoutX="236.0" layoutY="196.0" />
+      <Button id="calcBtn" layoutX="427.0" layoutY="108.0" mnemonicParsing="false" onAction="#calc" text="Calc" />
+   </children>
+</AnchorPane>
