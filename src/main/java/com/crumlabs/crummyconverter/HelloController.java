@@ -13,8 +13,10 @@ public class HelloController {
     protected void calc() {
         String nairStr = nairaInput.getText().toString();
         int nairaAmt = Integer.parseInt(nairStr);
-        int dollarAmt = nairaAmt / 522;
+        double dollarAmt = nairaAmt / 522;
         dollarInput.setText("" + dollarAmt);
+        double poundAmt = nairaAmt / 710;
+        poundInput.setText(""+ poundAmt);
     }
 
 
